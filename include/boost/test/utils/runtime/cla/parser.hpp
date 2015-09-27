@@ -373,7 +373,7 @@ private:
                         typo_candidates.push_back( typo_cand.second );
 
                         // 'missing char' typo
-                        if( next_trie = typo_cand.second->get_subtrie( c ) )
+                        if( (next_trie = typo_cand.second->get_subtrie( c )) )
                             typo_candidates.push_back( next_trie );
                     }
 
